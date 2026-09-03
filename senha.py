@@ -3,12 +3,11 @@ import re
 
 def user():
     
-    saida = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8', errors='ignore')
+    saida = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode()
     redes = []
     
     for linha in saida.splitlines():
         if ":" in linha and not "Perfil de grupo" in linha:
-            # Pega o que está depois dos dois-pontos
             nome = linha.split(":")[-1].strip()
             if nome and "Interfaces" not in linha:
                 redes.append(nome)
