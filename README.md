@@ -17,5 +17,5 @@ Nenhuma rede achada
 
 ## Observações
 
-- O programa consulta apenas perfis Wi-Fi já salvos no computador,sendo uma ferramenta de cybersecurity
+- O programa consulta apenas perfis Wi-Fi já salvos no computador,sendo um script para facilitar a visualização das redes salvas
 - O funcionamento depende do `netsh` e do idioma/formato de saída configurado no Windows.
